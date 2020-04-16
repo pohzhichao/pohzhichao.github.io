@@ -1,6 +1,18 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="refresh" content="0; url=http://pzc.x10host.com/pohzhichao_public/home.html" />
-</head>
+<div style='width:100%; word-wrap:break-word;' id='hello'></div>
+<script>
+var no = 10000;
+var str = '';
+var already_shown = false;
+for (var i=0; i<no; i++) {
+	if ((Math.random() < 0.001) && (!already_shown)) {
+		str += '8';
+		already_shown = true;
+	}
+	else {
+		str += '0';	
+	}
+}
+document.getElementById('hello').innerHTML = str;
+</script>
 </html>
